@@ -33,26 +33,18 @@
 		<learn-rate>0.01</learn-rate>
 		<learn-rate-max>0.01</learn-rate-max>
 		<learn-rate-decay>1.0</learn-rate-decay>
-		<iterator-max>10</iterator-max>
-		<user-reg>
-			<value>0.1</value>
-		</user-reg>
-		<item-reg>
-			<value>0.01</value>
-			<value>0.25</value>
-		</item-reg>
+		<iterator-max>50</iterator-max>
+		<user-reg><value>0.01</value><value>0.005</value></user-reg>
+		<item-reg><value>0.01</value><value>0.005</value></item-reg>
 		<bias-reg>0.01</bias-reg>
-		<num-factors>
-			<value>2</value>
-			<value>80</value>
-		</num-factors>
+		<num-factors>80</num-factors>
 	</alg>
-
+​
         <!-- METRICS SECTION -->
         <metric>
         	<ranking>true</ranking>
 		<list-size>10</list-size>
-		<class>precision</class>
+		<class>ndcg,rr</class>
                 <!-- <class>ndcg</class> -->
                 <!-- <class>ndcg,novelty,rr</class> -->
                 <!-- <class>novelty</class> -->
