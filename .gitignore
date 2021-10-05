@@ -3,6 +3,11 @@
 *.tsv
 
 # Generated files
-**csv
+/*csv
 
 librec-auto-study
+
+schwartz-mind/exp*
+schwartz-mind/post
+schwartz-mind/output.xml
+schwartz-mind/data/split
